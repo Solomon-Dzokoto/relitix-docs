@@ -134,9 +134,7 @@ Logic: This is a complex page. We need to map the Figma tabs to these components
 
     Screen New 4: SummaryTab.tsx
 
-!!! note "ACTION" Paste Screenshot of "Transactions Detail - New 1" (The Tabs) Here
 
-![Transaction Detail Screenshot Placeholder]
 
 ### AI Agent (Chat)
 
@@ -146,9 +144,7 @@ File: src/features/ai-agent/AgentPage.tsx
 
 Notes: Since there are 8 screens, this is a full "Chat Application." It includes typing states, empty states, and results.
 
-!!! note "ACTION" Paste Screenshot of "AI Agent (New) - 5" (Active Chat) Here
 
-![AI Agent Chat Screenshot Placeholder]
 
 ### Risk Assessment Reports
 
@@ -158,9 +154,7 @@ File: src/features/risk-assessment/RiskAssessmentPage.tsx
 
 Notes: These look like document readers (long text with sidebars).
 
-!!! note "ACTION" Paste Screenshot of "Risk Assessment 1" Here
 
-![Risk Assessment Screenshot Placeholder]
 
 ### Extraction Menu
 
@@ -170,9 +164,7 @@ File: src/features/extraction/ExtractionMenuPage.tsx
 
 Notes: The menu with the 6 blue cards (Contacts, Property, Terms, etc.).
 
-!!! note "ACTION" Paste Screenshot of "Extraction 1" Here
 
-![Extraction Menu Screenshot Placeholder]
 
 ### Upload Wizard
 
@@ -184,9 +176,7 @@ Description: The multi-step wizard for dragging & dropping PDFs and selecting th
 
     Logic: Handles the "Magic Bytes" validation before upload.
 
-!!! note "ACTION" Paste Screenshot of "New Transaction / Upload" Modal Here
 
-![Upload Screen Placeholder]
 
 ### Extraction & Review (The Core Feature)
 
@@ -202,9 +192,7 @@ Key Components:
 
     PDFViewer: The document panel on the left (from components/artifacts).
 
-!!! note "ACTION" Paste Screenshot of "Extraction / Correction View" Here
 
-![Extraction View Placeholder]
 
 ### Credits & Billing
 
@@ -216,9 +204,7 @@ Description: The page to purchase new transaction bundles.
 
     Logic: Redirects to Zoho/Stripe checkout via CheckoutRedirect.tsx.
 
-!!! note "ACTION" Paste Screenshot of "Buy Credits" Banner/Page Here
 
-![Credits Design Placeholder]
 
 ### Authentication Handoff
 
@@ -236,11 +222,9 @@ Logic:
 
     Redirects to /dashboard.
 
-!!! note "ACTION (Optional)" Paste Screenshot of Login/Loading Screen Here
 
-![Login Screen Placeholder]
 
-3. Figma Design Reference
+1. Figma Design Reference
 
 Figma File: Relitix AI - Contract Management Module
 
