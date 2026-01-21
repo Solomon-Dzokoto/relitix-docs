@@ -19,4 +19,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Frontend Architecture: frontend-architecture.md
   - Competitor Analysis: competitor-analysis.md
