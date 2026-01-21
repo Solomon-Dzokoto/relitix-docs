@@ -84,13 +84,7 @@ Paste the relevant Figma screenshots below each section to confirm the UI implem
 
 - **Key Components:** `StatsGrid`, `RiskChart` (Recharts).
 - **Data Source:** `useDashboardQuery` (aggregates transaction states).
-
-!!! note "ACTION"
-    Paste Screenshot of "Dashboard / Home" Design Here
-    
-    ![Dashboard Design Placeholder]
-
----
+<img width="549" height="306" alt="Screen Shot 2026-01-21 at 2 31 11 PM" src="https://github.com/user-attachments/assets/6653c19b-6a66-482f-9004-32b88df4b9e5" />
 
 ### Transaction List
 
