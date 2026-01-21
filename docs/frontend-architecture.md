@@ -26,7 +26,7 @@ src/
 │   ├── timeline/               # Progress visualization
 │   │   ├── TransactionTimeline.tsx
 │   │   └── TimelineStep.tsx
-│   └── ui/                     # Base shadcn/ui library (Buttons, Cards)
+│   └── ui/                     # Base shadcn/ui / Magic Ui library (Buttons, Cards)
 ├── domain/                     # TypeScript Types & Schemas
 │   ├── apiTypes.ts
 │   ├── credits/
@@ -164,14 +164,14 @@ Notes: These is the document readers (long text with sidebars).
 <img width="281" height="158" alt="Screen Shot 2026-01-21 at 3 59 30 PM" src="https://github.com/user-attachments/assets/b3c2bbba-cea5-4cd6-8d0f-3f4149f14c1f" />
 
 
-
 ### Extraction Menu
 
 Figma Screen: Extraction 1
 
 File: src/features/extraction/ExtractionMenuPage.tsx
 
-Notes: The menu with the 6 blue cards (Contacts, Property, Terms, etc.).
+Notes: The menu with the  (Contacts, Property, Terms, etc.).
+<img width="376" height="218" alt="Screen Shot 2026-01-21 at 4 01 25 PM" src="https://github.com/user-attachments/assets/f7c8cf18-2bb0-40fc-9879-8ab66edf0552" />
 
 
 
