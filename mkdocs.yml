@@ -1,0 +1,18 @@
+site_name: Relitix Contracts Documentation
+theme:
+  name: material
+  palette: 
+    primary: blue
+    accent: light blue
+  features:
+    - navigation.tabs        # Tabs at the top
+    - navigation.sections    # Sidebar grouping
+    - toc.integrate          # Table of contents on the right
+
+markdown_extensions:
+  - admonition               # For the "Note" and "Warning" boxes
+  - pymdownx.superfences:    # For Mermaid diagrams
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
