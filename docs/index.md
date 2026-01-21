@@ -2,7 +2,7 @@
 
 Welcome to the Relitix Contract Intelligence Platform documentation.
 
-## 📚 Documentation
+## Documentation
 
 - **[Competitor Analysis: ListedKit](competitor-analysis.md)** - Detailed analysis of ListedKit's approach and recommendations for Relitix
 

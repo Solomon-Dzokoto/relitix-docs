@@ -1,4 +1,4 @@
-# 🕵️ Competitor Analysis & Recommendations: ListedKit
+# Competitor Analysis & Recommendations: ListedKit
 
 **Target:** Relitix Contract Intelligence Platform  
 **Source:** ListedKit (Competitor/Inspiration)
@@ -17,7 +17,7 @@ The most critical differentiator in ListedKit's logic is that they do not use st
     **Capture:** The moment where the AI auto-populates the "Tasks" list from the PDF.  
     **Caption:** ListedKit automatically generating tasks based on specific contract clauses.
 
-### 🚀 Recommendation for Relitix
+### Recommendation for Relitix
 
 We should implement **"Conditional UI Rendering"** for our dashboard cards.
 
@@ -42,7 +42,7 @@ ListedKit visualizes the deal as a **Linear Timeline** relative to "Today." They
     **Capture:** The "Timeline" view showing the horizontal progress bar of dates.  
     **Caption:** Visualizing the deal as a timeline creates urgency.
 
-### 🚀 Recommendation for Relitix
+### Recommendation for Relitix
 
 We can win by combining **Risk with Time**. A risky clause is only a problem if you miss the deadline to fix it.
 
@@ -66,7 +66,7 @@ They offer a **"Draft Email"** button inside the deal context. It doesn't just o
     **Capture:** The "Draft Email" popup window.  
     **Caption:** AI drafting an email using specific data points from the extracted contract.
 
-### 🚀 Recommendation for Relitix
+### Recommendation for Relitix
 
 Transform our **"Recommendations"** panel into an **"Action Center."**
 
