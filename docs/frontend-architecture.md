@@ -127,7 +127,7 @@ File: src/features/transaction-detail/TransactionDetailPage.tsx
 Logic: This is a complex page. We need to map the Figma tabs to these components:
 
     Screen New 1: DetailsTab.tsx (Property Info)
-     <img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
+<img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
 
     Screen New 2: PartiesTab.tsx (Buyer/Seller)
 
