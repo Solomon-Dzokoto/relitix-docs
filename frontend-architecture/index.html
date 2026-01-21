@@ -529,7 +529,7 @@
 1. File Structure (Expanded)</p>
 <p>This structure aligns with the domain-driven design and covers all feature modules visible in the Figma file.
 Plaintext</p>
-<p>src/
+<div class="highlight"><pre><span></span><code>src/
 ├── api/                        # HTTP Layer
 │   ├── httpClient.ts           # Axios instance with Auth0 interceptors
 │   ├── apiErrors.ts            # Standard error handling
@@ -554,39 +554,39 @@ Plaintext</p>
 │       ├── transaction.state.ts
 │       └── transaction.schema.ts
 ├── features/                   # Page Logic &amp; Views
-│   ├── dashboard/                  # "Contract Home Page"
+│   ├── dashboard/                  # &quot;Contract Home Page&quot;
 │   │   ├── components/
 │   │   │   ├── StatsRibbon.tsx     # The top KPI cards
 │   │   │   ├── RenewalChart.tsx    # The main bar chart
 │   │   │   └── RiskPieChart.tsx    # The pie charts at bottom
 │   │   └── DashboardPage.tsx
-│   ├── transactions/               # "Transactions 1-4"
+│   ├── transactions/               # &quot;Transactions 1-4&quot;
 │   │   ├── components/
 │   │   │   ├── TransactionCard.tsx # For Grid View
 │   │   │   ├── TransactionRow.tsx  # For Table View
-│   │   │   └── FilterPanel.tsx     # The "Status/Type" filters
+│   │   │   └── FilterPanel.tsx     # The &quot;Status/Type&quot; filters
 │   │   └── TransactionsListPage.tsx
-│   ├── transaction-detail/         # "Transactions Detail - New 1-4"
+│   ├── transaction-detail/         # &quot;Transactions Detail - New 1-4&quot;
 │   │   ├── components/
-│   │   │   ├── DetailHeader.tsx    # Title + "Generate Summary" button
+│   │   │   ├── DetailHeader.tsx    # Title + &quot;Generate Summary&quot; button
 │   │   │   ├── tabs/
 │   │   │   │   ├── DetailsTab.tsx  # Address, County, Parcel
 │   │   │   │   ├── PartiesTab.tsx  # Buyer, Seller, Agents
 │   │   │   │   ├── TermsTab.tsx    # Contingencies &amp; Clauses
 │   │   │   │   └── SummaryTab.tsx  # AI Generated Summary
 │   │   └── TransactionDetailPage.tsx
-│   ├── ai-agent/                   # "AI Agent (New) 1-8"
+│   ├── ai-agent/                   # &quot;AI Agent (New) 1-8&quot;
 │   │   ├── components/
 │   │   │   ├── ChatBubble.tsx      # User vs AI message styles
 │   │   │   ├── PromptInput.tsx     # The bottom text bar
 │   │   │   └── AgentSidebar.tsx    # History of chats
 │   │   └── AgentPage.tsx
-│   ├── risk-assessment/            # "Risk Assessment 1-3"
+│   ├── risk-assessment/            # &quot;Risk Assessment 1-3&quot;
 │   │   ├── components/
 │   │   │   ├── RiskScorecard.tsx   # The Green/Red indicators
 │   │   │   └── RiskReport.tsx      # The long text document view
 │   │   └── RiskAssessmentPage.tsx
-│   ├── extraction/                 # "Extraction 1"
+│   ├── extraction/                 # &quot;Extraction 1&quot;
 │   │   ├── components/
 │   │   │   ├── ModuleGrid.tsx      # The 6 blue cards
 │   │   │   └── ExtractionCard.tsx  # Individual blue card
@@ -595,11 +595,11 @@ Plaintext</p>
 │   │   ├── CreditsPage.tsx
 │   │   ├── CreditsBalance.tsx
 │   │   └── CheckoutRedirect.tsx
-│   ├── review/                 # The "Correction View"
+│   ├── review/                 # The &quot;Correction View&quot;
 │   │   ├── ReviewPage.tsx
 │   │   ├── ReviewForm.tsx
 │   │   └── ReviewField.tsx
-│   └── upload/                 # The "New Transaction" Wizard
+│   └── upload/                 # The &quot;New Transaction&quot; Wizard
 │       ├── UploadPage.tsx
 │       ├── UploadDropzone.tsx
 │       └── UploadProgress.tsx
@@ -612,7 +612,8 @@ Plaintext</p>
 ├── App.tsx                     # Main Component
 ├── SsoEntryPage.tsx            # Auth0 Handoff Logic
 ├── router.tsx                  # Application Routes
-└── main.tsx                    # Entry Point</p>
+└── main.tsx                    # Entry Point
+</code></pre></div>
 <ol>
 <li>Design to Component Mapping</li>
 </ol>
@@ -693,6 +694,7 @@ Logic: Redirects to Zoho/Stripe checkout via CheckoutRedirect.tsx.
 <p>File: src/SsoEntryPage.tsx</p>
 <p>Description: The headless page that handles the redirect from the Angular Portal.</p>
 <p>Logic:</p>
+<hr />
 <pre><code>Reads ?code=xyz from URL.
 
 Calls auth0Client.exchange(code).
