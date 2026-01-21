@@ -99,7 +99,7 @@ src/
 
 2. Design to Component Mapping
 
-Use this section to organize your screenshots.
+
 ### Dashboard (Contract Home Page)
 
 Figma Screen: Contract Home Page
