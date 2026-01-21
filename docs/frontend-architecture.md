@@ -72,10 +72,6 @@ src/
 
 ## 2. Feature & Design Mapping
 
-Paste the relevant Figma screenshots below each section to confirm the UI implementation.
-
----
-
 ###  Dashboard Feature
 
 **File:** `src/features/dashboard/DashboardPage.tsx`

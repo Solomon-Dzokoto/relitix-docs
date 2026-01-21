@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../frontend-architecture/">
+        <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../competitor-analysis/">
       
       
         
@@ -21,7 +23,7 @@
     
     
       
-        <title>Competitor Analysis - Relitix Contracts Documentation</title>
+        <title>Frontend Architecture - Relitix Contracts Documentation</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#competitor-analysis-recommendations-listedkit" class="md-skip">
+        <a href="#frontend-architecture-design-map" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Competitor Analysis
+              Frontend Architecture
             
           </span>
         </div>
@@ -194,9 +196,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../frontend-architecture/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -213,11 +217,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../competitor-analysis/" class="md-tabs__link">
         
   
   
@@ -296,33 +298,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../frontend-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Frontend Architecture
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -342,7 +317,7 @@
   <span class="md-ellipsis">
     
   
-    Competitor Analysis
+    Frontend Architecture
   
 
     
@@ -360,7 +335,7 @@
   <span class="md-ellipsis">
     
   
-    Competitor Analysis
+    Frontend Architecture
   
 
     
@@ -386,22 +361,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-core-philosophy-dynamic-vs-static-workflows" class="md-nav__link">
+  <a href="#1-project-structure-file-tree" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Core Philosophy: Dynamic vs. Static Workflows
+        1. Project Structure (File Tree)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Core Philosophy: Dynamic vs. Static Workflows">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-feature-design-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Feature &amp; Design Mapping
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Feature &amp; Design Mapping">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#observation" class="md-nav__link">
+  <a href="#dashboard-feature" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Observation
+        Dashboard Feature
       
     </span>
   </a>
@@ -409,10 +395,54 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#recommendation-for-relitix" class="md-nav__link">
+  <a href="#transaction-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Recommendation for Relitix
+        Transaction List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upload-wizard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upload Wizard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraction-review-the-core-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extraction &amp; Review (The Core Feature)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#credits-billing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Credits &amp; Billing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Handoff
       
     </span>
   </a>
@@ -421,95 +451,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-feature-gap-operational-vs-risk-intelligence" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Feature Gap: Operational vs. Risk Intelligence
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Feature Gap: Operational vs. Risk Intelligence">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#observation_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Observation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recommendation-for-relitix_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recommendation for Relitix
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-contextual-action-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. The "Contextual Action" Pattern
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. The &#34;Contextual Action&#34; Pattern">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#observation_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Observation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recommendation-for-relitix_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recommendation for Relitix
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-summary-of-strategic-logic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Summary of Strategic Logic
-      
-    </span>
-  </a>
   
 </li>
       
@@ -517,6 +458,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../competitor-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Competitor Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -538,126 +506,154 @@
 
 
 
-<h1 id="competitor-analysis-recommendations-listedkit">Competitor Analysis &amp; Recommendations: ListedKit</h1>
-<p><strong>Target:</strong> Relitix Contract Intelligence Platform<br />
-<strong>Source:</strong> ListedKit (Competitor/Inspiration)</p>
-<h2 id="1-core-philosophy-dynamic-vs-static-workflows">1. Core Philosophy: Dynamic vs. Static Workflows</h2>
-<p>The most critical differentiator in ListedKit's logic is that they do not use static templates. Instead of forcing users to pick a "Buyer Checklist," their AI reads the contract and dynamically builds the task list.</p>
-<h3 id="observation">Observation</h3>
-<ul>
-<li><strong>Logic:</strong> If a contract does not have an Inspection Contingency, ListedKit never creates an "Inspection" task.</li>
-<li><strong>Impact:</strong> The UI is never cluttered with "N/A" fields. The user feels the system actually "read" the deal.</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Screenshot Opportunity</p>
-<p><strong>Action:</strong> Go to the Walkthrough Video at 0:45.<br />
-<strong>Capture:</strong> The moment where the AI auto-populates the "Tasks" list from the PDF.<br />
-<strong>Caption:</strong> ListedKit automatically generating tasks based on specific contract clauses.</p>
-</div>
-<h3 id="recommendation-for-relitix">Recommendation for Relitix</h3>
-<p>We should implement <strong>"Conditional UI Rendering"</strong> for our dashboard cards.</p>
-<ul>
-<li><strong>Current Plan:</strong> Show "Financing," "Property," and "Terms" cards for every deal.</li>
-<li><strong>Proposed Upgrade:</strong><ul>
-<li>If <code>Payment_Type == 'Cash'</code>, hide the "Financing" card entirely.</li>
-<li>If <code>Property_Type == 'Condo'</code>, show a "HOA Docs" card that is normally hidden.</li>
-<li><strong>Benefit:</strong> Reduces cognitive load for the agent.</li>
-</ul>
-</li>
-</ul>
+<h1 id="frontend-architecture-design-map">Frontend Architecture &amp; Design Map</h1>
+<p><strong>Project:</strong> Relitix Contracts &amp; Intelligence Platform<br />
+<strong>Updated:</strong> January 2026<br />
+<strong>Purpose:</strong> Map the codebase structure directly to our Figma UI designs.</p>
 <hr />
-<h2 id="2-feature-gap-operational-vs-risk-intelligence">2. Feature Gap: Operational vs. Risk Intelligence</h2>
-<p>ListedKit focuses on <strong>"When do I do this?"</strong> (Operations), whereas Relitix focuses on <strong>"Is this bad?"</strong> (Risk).</p>
-<h3 id="observation_1">Observation</h3>
-<p>ListedKit visualizes the deal as a <strong>Linear Timeline</strong> relative to "Today." They calculate "Business Days" vs. "Calendar Days" automatically to set accurate deadlines.</p>
-<div class="admonition tip">
-<p class="admonition-title">Screenshot Opportunity</p>
-<p><strong>Action:</strong> Go to the Walkthrough Video at 1:15.<br />
-<strong>Capture:</strong> The "Timeline" view showing the horizontal progress bar of dates.<br />
-<strong>Caption:</strong> Visualizing the deal as a timeline creates urgency.</p>
-</div>
-<h3 id="recommendation-for-relitix_1">Recommendation for Relitix</h3>
-<p>We can win by combining <strong>Risk with Time</strong>. A risky clause is only a problem if you miss the deadline to fix it.</p>
-<p><strong>Proposed UI Change:</strong> Instead of just a "Risk Score" (Green/Red), add a <strong>"Risk Deadline"</strong> column to our dashboard.</p>
-<ul>
-<li><strong>Example:</strong> "Missing Radon Addendum (Expires in 2 days)."</li>
-<li><strong>Action:</strong> Sync these specific "Risk Deadlines" to the agent's Google Calendar.</li>
-</ul>
-<hr />
-<h2 id="3-the-contextual-action-pattern">3. The "Contextual Action" Pattern</h2>
-<p>ListedKit moves beyond "Viewing" data to "Acting" on it.</p>
-<h3 id="observation_2">Observation</h3>
-<p>They offer a <strong>"Draft Email"</strong> button inside the deal context. It doesn't just open a blank email; it pre-fills the message with the Loan Amount, Lender Name, and Address extracted from the PDF.</p>
-<div class="admonition tip">
-<p class="admonition-title">Screenshot Opportunity</p>
-<p><strong>Action:</strong> Go to the Walkthrough Video at 1:50.<br />
-<strong>Capture:</strong> The "Draft Email" popup window.<br />
-<strong>Caption:</strong> AI drafting an email using specific data points from the extracted contract.</p>
-</div>
-<h3 id="recommendation-for-relitix_2">Recommendation for Relitix</h3>
-<p>Transform our <strong>"Recommendations"</strong> panel into an <strong>"Action Center."</strong></p>
-<table>
-<thead>
-<tr>
-<th>Risk Identified</th>
-<th>Current Relitix Action</th>
-<th>Proposed "Contextual" Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Missing Addendum</td>
-<td>Display Warning text</td>
-<td>Button: "Draft Request to Seller"</td>
-</tr>
-<tr>
-<td>Low Earnest Money</td>
-<td>Display Risk Score</td>
-<td>Button: "Draft Amendment PDF"</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Logic:</strong></p>
-<div class="highlight"><pre><span></span><code><span class="c1">// If the AI finds a risk, it should return a &#39;suggestedAction&#39; object</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">risk</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;MISSING_DOC&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">showButton</span><span class="p">(</span><span class="s1">&#39;Draft Email Request&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;request_doc&#39;</span><span class="p">,</span><span class="w"> </span>
-<span class="w">    </span><span class="nx">recipient</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;listing_agent&#39;</span><span class="w"> </span>
-<span class="w">  </span><span class="p">});</span>
-<span class="p">}</span>
+<h2 id="1-project-structure-file-tree">1. Project Structure (File Tree)</h2>
+<p>This structure reflects the domain-driven design we agreed upon.</p>
+<div class="highlight"><pre><span></span><code>src/
+├── api/                        # HTTP Layer
+│   ├── httpClient.ts           # Axios instance with Auth0 interceptors
+│   ├── apiErrors.ts            # Standard error handling
+│   ├── transactions.api.ts     # API calls for Transaction domain
+│   └── credits.api.ts          # API calls for Credits/Billing
+├── components/                 # Shared UI Components
+│   ├── artifacts/              # PDF Viewer, Document Icons
+│   ├── feedback/               # Toasts, Loaders, Error Messages
+│   ├── layout/                 # Shell components
+│   │   ├── Header.tsx
+│   │   └── Sidebar.tsx
+│   ├── timeline/               # Progress visualization
+│   │   ├── TransactionTimeline.tsx
+│   │   └── TimelineStep.tsx
+│   └── ui/                     # Base shadcn/ui library (Buttons, Cards)
+├── domain/                     # TypeScript Types &amp; Schemas
+│   ├── apiTypes.ts
+│   ├── credits/
+│   │   └── credits.types.ts
+│   └── transaction/
+│       ├── transaction.types.ts
+│       ├── transaction.state.ts
+│       └── transaction.schema.ts
+├── features/                   # Page Logic &amp; Views
+│   ├── credits/
+│   │   ├── CreditsPage.tsx
+│   │   ├── CreditsBalance.tsx
+│   │   └── CheckoutRedirect.tsx
+│   ├── dashboard/
+│   │   └── DashboardPage.tsx
+│   ├── report/
+│   │   └── ReportPage.tsx
+│   ├── review/                 # The &quot;Correction View&quot;
+│   │   ├── ReviewPage.tsx
+│   │   ├── ReviewForm.tsx
+│   │   └── ReviewField.tsx
+│   ├── transactions/
+│   │   ├── TransactionsListPage.tsx
+│   │   ├── TransactionDetailPage.tsx
+│   │   └── TransactionLayout.tsx
+│   └── upload/                 # The &quot;New Transaction&quot; Wizard
+│       ├── UploadPage.tsx
+│       ├── UploadDropzone.tsx
+│       └── UploadProgress.tsx
+├── hooks/                      # Global Hooks
+│   ├── useAuth.ts              # Auth0 wrapper
+│   └── useFlag.ts              # Feature flagging
+├── state/                      # Global State (React Query)
+│   ├── queryClient.ts
+│   └── queryKeys.ts
+├── App.tsx                     # Main Component
+├── SsoEntryPage.tsx            # Auth0 Handoff Logic
+├── router.tsx                  # Application Routes
+└── main.tsx                    # Entry Point
 </code></pre></div>
 <hr />
-<h2 id="4-summary-of-strategic-logic">4. Summary of Strategic Logic</h2>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>ListedKit Logic</th>
-<th>Relitix Implementation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Intake Cost</td>
-<td>Pay-Per-Deal ($9.99)</td>
-<td>Consider a "Per Upload" tier for low-volume agents.</td>
-</tr>
-<tr>
-<td>Data Extraction</td>
-<td>Extracts for Tasks (To-Do)</td>
-<td>Extract for Compliance (Risk Audit).</td>
-</tr>
-<tr>
-<td>User Onboarding</td>
-<td>"Upload your first contract" (Instant value)</td>
-<td>Ensure our "New Transaction" wizard is the first thing they see.</td>
-</tr>
-</tbody>
-</table>
+<h2 id="2-feature-design-mapping">2. Feature &amp; Design Mapping</h2>
+<p>Paste the relevant Figma screenshots below each section to confirm the UI implementation.</p>
 <hr />
-<div class="admonition quote">
-<p class="admonition-title">Closing Thought</p>
-<p>"Agents don't want to just see the risks; they want tools to fix them before they become lawsuits. By adopting ListedKit's 'Action' logic, Relitix becomes an assistant, not just an auditor."</p>
+<h3 id="dashboard-feature">Dashboard Feature</h3>
+<p><strong>File:</strong> <code>src/features/dashboard/DashboardPage.tsx</code></p>
+<p><strong>Description:</strong> The landing page showing "Good Morning, Derek," contract renewal timelines, and risk widgets.</p>
+<ul>
+<li><strong>Key Components:</strong> <code>StatsGrid</code>, <code>RiskChart</code> (Recharts).</li>
+<li><strong>Data Source:</strong> <code>useDashboardQuery</code> (aggregates transaction states).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">ACTION</p>
+<p>Paste Screenshot of "Dashboard / Home" Design Here</p>
+<p>![Dashboard Design Placeholder]</p>
+</div>
+<hr />
+<h3 id="transaction-list">Transaction List</h3>
+<p><strong>File:</strong> <code>src/features/transactions/TransactionsListPage.tsx</code></p>
+<p><strong>Description:</strong> The grid/list view of all uploaded contracts with their status badges (Active, Closed, Review Needed).</p>
+<ul>
+<li><strong>Key Components:</strong> <code>ModuleCard</code> (Blue Cards), Search Bar, Filter Toggles.</li>
+<li><strong>Data Source:</strong> <code>transactions.api.ts</code> → <code>getTransactions()</code>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">ACTION</p>
+<p>Paste Screenshot of "Transaction Grid View" Here</p>
+<p>![Transaction List Placeholder]</p>
+</div>
+<hr />
+<h3 id="upload-wizard">Upload Wizard</h3>
+<p><strong>File:</strong> <code>src/features/upload/UploadPage.tsx</code></p>
+<p><strong>Description:</strong> The multi-step wizard for dragging &amp; dropping PDFs and selecting the contract type.</p>
+<ul>
+<li><strong>Key Components:</strong> <code>UploadDropzone.tsx</code> (File input), <code>UploadProgress.tsx</code> (Extraction status bar).</li>
+<li><strong>Logic:</strong> Handles the "Magic Bytes" validation before upload.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">ACTION</p>
+<p>Paste Screenshot of "New Transaction / Upload" Modal Here</p>
+<p>![Upload Screen Placeholder]</p>
+</div>
+<hr />
+<h3 id="extraction-review-the-core-feature">Extraction &amp; Review (The Core Feature)</h3>
+<p><strong>File:</strong> <code>src/features/review/ReviewPage.tsx</code></p>
+<p><strong>Description:</strong> The split-screen view where users verify AI data against the PDF.</p>
+<p><strong>Key Components:</strong></p>
+<ul>
+<li><code>ReviewForm.tsx</code>: The form on the right showing extracted fields.</li>
+<li><code>ReviewField.tsx</code>: The individual inputs that toggle <code>User_Override</code> when edited.</li>
+<li><code>PDFViewer</code>: The document panel on the left (from <code>components/artifacts</code>).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">ACTION</p>
+<p>Paste Screenshot of "Extraction / Correction View" Here</p>
+<p>![Extraction View Placeholder]</p>
+</div>
+<hr />
+<h3 id="credits-billing">Credits &amp; Billing</h3>
+<p><strong>File:</strong> <code>src/features/credits/CreditsPage.tsx</code></p>
+<p><strong>Description:</strong> The page to purchase new transaction bundles.</p>
+<ul>
+<li><strong>Key Components:</strong> <code>CreditsBalance.tsx</code> (Top right indicator), Pricing Table.</li>
+<li><strong>Logic:</strong> Redirects to Zoho/Stripe checkout via <code>CheckoutRedirect.tsx</code>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">ACTION</p>
+<p>Paste Screenshot of "Buy Credits" Banner/Page Here</p>
+<p>![Credits Design Placeholder]</p>
+</div>
+<hr />
+<h3 id="authentication-handoff">Authentication Handoff</h3>
+<p><strong>File:</strong> <code>src/SsoEntryPage.tsx</code></p>
+<p><strong>Description:</strong> The headless page that handles the redirect from the Angular Portal.</p>
+<p><strong>Logic:</strong></p>
+<ol>
+<li>Reads <code>?code=xyz</code> from URL.</li>
+<li>Calls <code>auth0Client.exchange(code)</code>.</li>
+<li>Stores Token.</li>
+<li>Redirects to <code>/dashboard</code>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">ACTION (Optional)</p>
+<p>Paste Screenshot of Login/Loading Screen Here</p>
+<p>![Login Screen Placeholder]</p>
 </div>
 
 
