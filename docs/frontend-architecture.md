@@ -117,7 +117,7 @@ File: src/features/transactions/TransactionsListPage.tsx
 
 Logic: This page needs a viewMode state ('grid' | 'table') to switch between the card view (Screen 1) and list view (Screen 2).
 
-<img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 33 51 PM" src="https://github.com/user-attachments/assets/0650d059-4c89-4eb1-a560-7eb4a02c1765" /> <img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 37 55 PM" src="https://github.com/user-attachments/assets/d08a5e5e-c4df-4dd7-a47d-5ad9f662f21f" /> <img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
+<img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 33 51 PM" src="https://github.com/user-attachments/assets/0650d059-4c89-4eb1-a560-7eb4a02c1765" /> <img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 37 55 PM" src="https://github.com/user-attachments/assets/d08a5e5e-c4df-4dd7-a47d-5ad9f662f21f" />
 ### Transaction Details (The Tabs)
 
 Figma Screens: Transactions Detail - New 1 through New 4
@@ -127,6 +127,7 @@ File: src/features/transaction-detail/TransactionDetailPage.tsx
 Logic: This is a complex page. We need to map the Figma tabs to these components:
 
     Screen New 1: DetailsTab.tsx (Property Info)
+     <img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
 
     Screen New 2: PartiesTab.tsx (Buyer/Seller)
 
