@@ -2,8 +2,8 @@ site_name: Relitix Contracts Documentation
 theme:
   name: material
   palette: 
-    primary: blue
-    accent: light blue
+    primary: red
+    accent: deep orange
   features:
     - navigation.tabs        # Tabs at the top
     - navigation.sections    # Sidebar grouping
