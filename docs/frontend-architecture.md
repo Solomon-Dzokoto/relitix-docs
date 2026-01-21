@@ -161,6 +161,7 @@ Figma Screens: Risk Assessment 1 through 3
 File: src/features/risk-assessment/RiskAssessmentPage.tsx
 
  Notes: These is the document readers (long text with sidebars).
+ 
 <img width="281" height="158" alt="Screen Shot 2026-01-21 at 3 59 30 PM" src="https://github.com/user-attachments/assets/b3c2bbba-cea5-4cd6-8d0f-3f4149f14c1f" />
 
 
