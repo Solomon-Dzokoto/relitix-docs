@@ -126,7 +126,7 @@ File: src/features/transaction-detail/TransactionDetailPage.tsx
 
 Logic: This is a complex page. We need to map the Figma tabs to these components:
 
-    Screen New 1: DetailsTab.tsx (Property Info)
+     Screen New 1: DetailsTab.tsx (Property Info)
 <img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
 
     Screen New 2: PartiesTab.tsx (Buyer/Seller)
@@ -160,7 +160,7 @@ Figma Screens: Risk Assessment 1 through 3
 
 File: src/features/risk-assessment/RiskAssessmentPage.tsx
 
-Notes: These is the document readers (long text with sidebars).
+ Notes: These is the document readers (long text with sidebars).
 <img width="281" height="158" alt="Screen Shot 2026-01-21 at 3 59 30 PM" src="https://github.com/user-attachments/assets/b3c2bbba-cea5-4cd6-8d0f-3f4149f14c1f" />
 
 
@@ -170,7 +170,8 @@ Figma Screen: Extraction 1
 
 File: src/features/extraction/ExtractionMenuPage.tsx
 
-Notes: The menu with the  (Contacts, Property, Terms, etc.).
+ Notes: The menu with the  (Contacts, Property, Terms, etc.).
+
 <img width="376" height="218" alt="Screen Shot 2026-01-21 at 4 01 25 PM" src="https://github.com/user-attachments/assets/f7c8cf18-2bb0-40fc-9879-8ab66edf0552" />
 
 
@@ -182,6 +183,7 @@ File: src/features/upload/UploadPage.tsx
 Description: The multi-step wizard for dragging & dropping PDFs and selecting the contract type.
 
     Key Components: UploadDropzone.tsx (File input), UploadProgress.tsx (Extraction status bar).
+
 
     Logic: Handles the "Magic Bytes" validation before upload.
 
@@ -211,7 +213,11 @@ Description: The page to purchase new transaction bundles.
 
     Key Components: CreditsBalance.tsx (Top right indicator), Pricing Table.
 
-    Logic: Redirects to Zoho/Stripe checkout via CheckoutRedirect.tsx.
+    Logic: Redirects to  checkout via CheckoutRedirect.tsx.
+<img width="553" height="329" alt="Screen Shot 2026-01-21 at 4 34 20 PM" src="https://github.com/user-attachments/assets/2514560c-9dc8-4f32-9520-71c8c9419671" />   
+<img width="553" height="329" alt="Screen Shot 2026-01-21 at 4 35 22 PM" src="https://github.com/user-attachments/assets/f96f6ed3-187c-4913-a7b1-bea5e0916415" />
+
+<img width="553" height="329" alt="Screen Shot 2026-01-21 at 4 35 53 PM" src="https://github.com/user-attachments/assets/31fabc5b-876c-4f20-9eb8-f153e62e4c51" />
 
 
 
@@ -230,6 +236,8 @@ Logic:
     Stores Token.
 
     Redirects to /dashboard.
+<img width="724" height="413" alt="Screen Shot 2026-01-21 at 4 38 05 PM" src="https://github.com/user-attachments/assets/feb65ff7-609d-4bee-b5ed-478ff6647c7d" />
+
 
 
 
