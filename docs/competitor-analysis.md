@@ -12,10 +12,6 @@ The most critical differentiator in ListedKit's logic is that they do not use st
 - **Logic:** If a contract does not have an Inspection Contingency, ListedKit never creates an "Inspection" task.
 - **Impact:** The UI is never cluttered with "N/A" fields. The user feels the system actually "read" the deal.
 
-!!! tip "Screenshot Opportunity"
-    **Action:** Go to the Walkthrough Video at 0:45.  
-    **Capture:** The moment where the AI auto-populates the "Tasks" list from the PDF.  
-    **Caption:** ListedKit automatically generating tasks based on specific contract clauses.
 
 ### Recommendation for Relitix
 
@@ -37,10 +33,6 @@ ListedKit focuses on **"When do I do this?"** (Operations), whereas Relitix focu
 
 ListedKit visualizes the deal as a **Linear Timeline** relative to "Today." They calculate "Business Days" vs. "Calendar Days" automatically to set accurate deadlines.
 
-!!! tip "Screenshot Opportunity"
-    **Action:** Go to the Walkthrough Video at 1:15.  
-    **Capture:** The "Timeline" view showing the horizontal progress bar of dates.  
-    **Caption:** Visualizing the deal as a timeline creates urgency.
 
 ### Recommendation for Relitix
 
@@ -61,10 +53,7 @@ ListedKit moves beyond "Viewing" data to "Acting" on it.
 
 They offer a **"Draft Email"** button inside the deal context. It doesn't just open a blank email; it pre-fills the message with the Loan Amount, Lender Name, and Address extracted from the PDF.
 
-!!! tip "Screenshot Opportunity"
-    **Action:** Go to the Walkthrough Video at 1:50.  
-    **Capture:** The "Draft Email" popup window.  
-    **Caption:** AI drafting an email using specific data points from the extracted contract.
+
 
 ### Recommendation for Relitix
 
