@@ -10,6 +10,7 @@ Purpose: Map every Figma screen to a specific React component.
 This structure aligns with the domain-driven design and covers all feature modules visible in the Figma file.
 Plaintext
 
+```plaintext
 src/
 ├── api/                        # HTTP Layer
 │   ├── httpClient.ts           # Axios instance with Auth0 interceptors
@@ -94,6 +95,7 @@ src/
 ├── SsoEntryPage.tsx            # Auth0 Handoff Logic
 ├── router.tsx                  # Application Routes
 └── main.tsx                    # Entry Point
+```
 
 2. Design to Component Mapping
 
@@ -225,7 +227,7 @@ File: src/SsoEntryPage.tsx
 Description: The headless page that handles the redirect from the Angular Portal.
 
 Logic:
-
+****
     Reads ?code=xyz from URL.
 
     Calls auth0Client.exchange(code).
