@@ -80,13 +80,7 @@ src/
 
 - **Key Components:** `StatsGrid`, `RiskChart` (Recharts).
 - **Data Source:** `useDashboardQuery` (aggregates transaction states).
-
-!!! note "ACTION"
-    Paste Screenshot of "Dashboard / Home" Design Here
-    
-    ![Dashboard Design Placeholder]
-
----
+<img width="549" height="306" alt="Screen Shot 2026-01-21 at 2 31 11 PM" src="https://github.com/user-attachments/assets/6653c19b-6a66-482f-9004-32b88df4b9e5" />
 
 ### Transaction List
 
@@ -96,13 +90,11 @@ src/
 
 - **Key Components:** `ModuleCard` (Blue Cards), Search Bar, Filter Toggles.
 - **Data Source:** `transactions.api.ts` → `getTransactions()`.
+<img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 33 51 PM" src="https://github.com/user-attachments/assets/0650d059-4c89-4eb1-a560-7eb4a02c1765" />
+<img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 37 55 PM" src="https://github.com/user-attachments/assets/d08a5e5e-c4df-4dd7-a47d-5ad9f662f21f" />
+<img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
 
-!!! note "ACTION"
-    Paste Screenshot of "Transaction Grid View" Here
-    
-    ![Transaction List Placeholder]
 
----
 
 ###  Upload Wizard
 
@@ -114,7 +106,8 @@ src/
 - **Logic:** Handles the "Magic Bytes" validation before upload.
 
 !!! note "ACTION"
-    Paste Screenshot of "New Transaction / Upload" Modal Here
+    Paste
+ Screenshot of "New Transaction / Upload" Modal Here
     
     ![Upload Screen Placeholder]
 
