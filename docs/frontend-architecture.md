@@ -1,16 +1,15 @@
-#  Frontend Architecture & Design Map
+# Frontend Architecture & Design Map
 
-**Project:** Relitix Contracts & Intelligence Platform  
-**Updated:** January 2026  
-**Purpose:** Map the codebase structure directly to our Figma UI designs.
+Project: Relitix Contracts & Intelligence Platform
 
----
+Updated: January 2026
 
-## 1. Project Structure (File Tree)
+Purpose: Map every Figma screen to a specific React component.
+1. File Structure (Expanded)
 
-This structure reflects the domain-driven design we agreed upon.
+This structure aligns with the domain-driven design and covers all feature modules visible in the Figma file.
+Plaintext
 
-```plaintext
 src/
 ├── api/                        # HTTP Layer
 │   ├── httpClient.ts           # Axios instance with Auth0 interceptors
@@ -36,22 +35,51 @@ src/
 │       ├── transaction.state.ts
 │       └── transaction.schema.ts
 ├── features/                   # Page Logic & Views
+│   ├── dashboard/                  # "Contract Home Page"
+│   │   ├── components/
+│   │   │   ├── StatsRibbon.tsx     # The top KPI cards
+│   │   │   ├── RenewalChart.tsx    # The main bar chart
+│   │   │   └── RiskPieChart.tsx    # The pie charts at bottom
+│   │   └── DashboardPage.tsx
+│   ├── transactions/               # "Transactions 1-4"
+│   │   ├── components/
+│   │   │   ├── TransactionCard.tsx # For Grid View
+│   │   │   ├── TransactionRow.tsx  # For Table View
+│   │   │   └── FilterPanel.tsx     # The "Status/Type" filters
+│   │   └── TransactionsListPage.tsx
+│   ├── transaction-detail/         # "Transactions Detail - New 1-4"
+│   │   ├── components/
+│   │   │   ├── DetailHeader.tsx    # Title + "Generate Summary" button
+│   │   │   ├── tabs/
+│   │   │   │   ├── DetailsTab.tsx  # Address, County, Parcel
+│   │   │   │   ├── PartiesTab.tsx  # Buyer, Seller, Agents
+│   │   │   │   ├── TermsTab.tsx    # Contingencies & Clauses
+│   │   │   │   └── SummaryTab.tsx  # AI Generated Summary
+│   │   └── TransactionDetailPage.tsx
+│   ├── ai-agent/                   # "AI Agent (New) 1-8"
+│   │   ├── components/
+│   │   │   ├── ChatBubble.tsx      # User vs AI message styles
+│   │   │   ├── PromptInput.tsx     # The bottom text bar
+│   │   │   └── AgentSidebar.tsx    # History of chats
+│   │   └── AgentPage.tsx
+│   ├── risk-assessment/            # "Risk Assessment 1-3"
+│   │   ├── components/
+│   │   │   ├── RiskScorecard.tsx   # The Green/Red indicators
+│   │   │   └── RiskReport.tsx      # The long text document view
+│   │   └── RiskAssessmentPage.tsx
+│   ├── extraction/                 # "Extraction 1"
+│   │   ├── components/
+│   │   │   ├── ModuleGrid.tsx      # The 6 blue cards
+│   │   │   └── ExtractionCard.tsx  # Individual blue card
+│   │   └── ExtractionMenuPage.tsx
 │   ├── credits/
 │   │   ├── CreditsPage.tsx
 │   │   ├── CreditsBalance.tsx
 │   │   └── CheckoutRedirect.tsx
-│   ├── dashboard/
-│   │   └── DashboardPage.tsx
-│   ├── report/
-│   │   └── ReportPage.tsx
 │   ├── review/                 # The "Correction View"
 │   │   ├── ReviewPage.tsx
 │   │   ├── ReviewForm.tsx
 │   │   └── ReviewField.tsx
-│   ├── transactions/
-│   │   ├── TransactionsListPage.tsx
-│   │   ├── TransactionDetailPage.tsx
-│   │   └── TransactionLayout.tsx
 │   └── upload/                 # The "New Transaction" Wizard
 │       ├── UploadPage.tsx
 │       ├── UploadDropzone.tsx
@@ -66,102 +94,152 @@ src/
 ├── SsoEntryPage.tsx            # Auth0 Handoff Logic
 ├── router.tsx                  # Application Routes
 └── main.tsx                    # Entry Point
-```
 
----
+2. Design to Component Mapping
 
-## 2. Feature & Design Mapping
+Use this section to organize your screenshots.
+### Dashboard (Contract Home Page)
 
-###  Dashboard Feature
+Figma Screen: Contract Home Page
 
-**File:** `src/features/dashboard/DashboardPage.tsx`
+File: src/features/dashboard/DashboardPage.tsx
 
-**Description:** The landing page showing "Good Morning, Derek," contract renewal timelines, and risk widgets.
+Notes: Needs to handle the "Good Morning" header and the Grid of 3 charts.
 
-- **Key Components:** `StatsGrid`, `RiskChart` (Recharts).
-- **Data Source:** `useDashboardQuery` (aggregates transaction states).
 <img width="549" height="306" alt="Screen Shot 2026-01-21 at 2 31 11 PM" src="https://github.com/user-attachments/assets/6653c19b-6a66-482f-9004-32b88df4b9e5" />
+### Transactions List (Grid & Table)
 
-### Transaction List
+Figma Screens: Transactions 1 - New, Transactions 2 - New
 
-**File:** `src/features/transactions/TransactionsListPage.tsx`
+File: src/features/transactions/TransactionsListPage.tsx
 
-**Description:** The grid/list view of all uploaded contracts with their status badges (Active, Closed, Review Needed).
+Logic: This page needs a viewMode state ('grid' | 'table') to switch between the card view (Screen 1) and list view (Screen 2).
 
-- **Key Components:** `ModuleCard` (Blue Cards), Search Bar, Filter Toggles.
-- **Data Source:** `transactions.api.ts` → `getTransactions()`.
-<img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 33 51 PM" src="https://github.com/user-attachments/assets/0650d059-4c89-4eb1-a560-7eb4a02c1765" />
-<img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 37 55 PM" src="https://github.com/user-attachments/assets/d08a5e5e-c4df-4dd7-a47d-5ad9f662f21f" />
-<img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
+<img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 33 51 PM" src="https://github.com/user-attachments/assets/0650d059-4c89-4eb1-a560-7eb4a02c1765" /> <img width="338" height="194" alt="Screen Shot 2026-01-21 at 2 37 55 PM" src="https://github.com/user-attachments/assets/d08a5e5e-c4df-4dd7-a47d-5ad9f662f21f" /> <img width="385" height="220" alt="Screen Shot 2026-01-21 at 2 39 51 PM" src="https://github.com/user-attachments/assets/677c71f2-5ce9-452c-8d66-b6755dca912e" />
+### Transaction Details (The Tabs)
 
+Figma Screens: Transactions Detail - New 1 through New 4
 
+File: src/features/transaction-detail/TransactionDetailPage.tsx
 
-###  Upload Wizard
+Logic: This is a complex page. We need to map the Figma tabs to these components:
 
-**File:** `src/features/upload/UploadPage.tsx`
+    Screen New 1: DetailsTab.tsx (Property Info)
 
-**Description:** The multi-step wizard for dragging & dropping PDFs and selecting the contract type.
+    Screen New 2: PartiesTab.tsx (Buyer/Seller)
 
-- **Key Components:** `UploadDropzone.tsx` (File input), `UploadProgress.tsx` (Extraction status bar).
-- **Logic:** Handles the "Magic Bytes" validation before upload.
+    Screen New 3: TermsTab.tsx (Clauses)
 
-!!! note "ACTION"
-    Paste
- Screenshot of "New Transaction / Upload" Modal Here
-    
-    ![Upload Screen Placeholder]
+    Screen New 4: SummaryTab.tsx
 
----
+!!! note "ACTION" Paste Screenshot of "Transactions Detail - New 1" (The Tabs) Here
+
+![Transaction Detail Screenshot Placeholder]
+
+### AI Agent (Chat)
+
+Figma Screens: AI Agent (New) - 1 through 8
+
+File: src/features/ai-agent/AgentPage.tsx
+
+Notes: Since there are 8 screens, this is a full "Chat Application." It includes typing states, empty states, and results.
+
+!!! note "ACTION" Paste Screenshot of "AI Agent (New) - 5" (Active Chat) Here
+
+![AI Agent Chat Screenshot Placeholder]
+
+### Risk Assessment Reports
+
+Figma Screens: Risk Assessment 1 through 3
+
+File: src/features/risk-assessment/RiskAssessmentPage.tsx
+
+Notes: These look like document readers (long text with sidebars).
+
+!!! note "ACTION" Paste Screenshot of "Risk Assessment 1" Here
+
+![Risk Assessment Screenshot Placeholder]
+
+### Extraction Menu
+
+Figma Screen: Extraction 1
+
+File: src/features/extraction/ExtractionMenuPage.tsx
+
+Notes: The menu with the 6 blue cards (Contacts, Property, Terms, etc.).
+
+!!! note "ACTION" Paste Screenshot of "Extraction 1" Here
+
+![Extraction Menu Screenshot Placeholder]
+
+### Upload Wizard
+
+File: src/features/upload/UploadPage.tsx
+
+Description: The multi-step wizard for dragging & dropping PDFs and selecting the contract type.
+
+    Key Components: UploadDropzone.tsx (File input), UploadProgress.tsx (Extraction status bar).
+
+    Logic: Handles the "Magic Bytes" validation before upload.
+
+!!! note "ACTION" Paste Screenshot of "New Transaction / Upload" Modal Here
+
+![Upload Screen Placeholder]
 
 ### Extraction & Review (The Core Feature)
 
-**File:** `src/features/review/ReviewPage.tsx`
+File: src/features/review/ReviewPage.tsx
 
-**Description:** The split-screen view where users verify AI data against the PDF.
+Description: The split-screen view where users verify AI data against the PDF.
 
-**Key Components:**
+Key Components:
 
-- `ReviewForm.tsx`: The form on the right showing extracted fields.
-- `ReviewField.tsx`: The individual inputs that toggle `User_Override` when edited.
-- `PDFViewer`: The document panel on the left (from `components/artifacts`).
+    ReviewForm.tsx: The form on the right showing extracted fields.
 
-!!! note "ACTION"
-    Paste Screenshot of "Extraction / Correction View" Here
-    
-    ![Extraction View Placeholder]
+    ReviewField.tsx: The individual inputs that toggle User_Override when edited.
 
----
+    PDFViewer: The document panel on the left (from components/artifacts).
+
+!!! note "ACTION" Paste Screenshot of "Extraction / Correction View" Here
+
+![Extraction View Placeholder]
 
 ### Credits & Billing
 
-**File:** `src/features/credits/CreditsPage.tsx`
+File: src/features/credits/CreditsPage.tsx
 
-**Description:** The page to purchase new transaction bundles.
+Description: The page to purchase new transaction bundles.
 
-- **Key Components:** `CreditsBalance.tsx` (Top right indicator), Pricing Table.
-- **Logic:** Redirects to Zoho/Stripe checkout via `CheckoutRedirect.tsx`.
+    Key Components: CreditsBalance.tsx (Top right indicator), Pricing Table.
 
-!!! note "ACTION"
-    Paste Screenshot of "Buy Credits" Banner/Page Here
-    
-    ![Credits Design Placeholder]
+    Logic: Redirects to Zoho/Stripe checkout via CheckoutRedirect.tsx.
 
----
+!!! note "ACTION" Paste Screenshot of "Buy Credits" Banner/Page Here
 
-###  Authentication Handoff
+![Credits Design Placeholder]
 
-**File:** `src/SsoEntryPage.tsx`
+### Authentication Handoff
 
-**Description:** The headless page that handles the redirect from the Angular Portal.
+File: src/SsoEntryPage.tsx
 
-**Logic:**
+Description: The headless page that handles the redirect from the Angular Portal.
 
-1. Reads `?code=xyz` from URL.
-2. Calls `auth0Client.exchange(code)`.
-3. Stores Token.
-4. Redirects to `/dashboard`.
+Logic:
 
-!!! note "ACTION (Optional)"
-    Paste Screenshot of Login/Loading Screen Here
-    
-    ![Login Screen Placeholder]
+    Reads ?code=xyz from URL.
+
+    Calls auth0Client.exchange(code).
+
+    Stores Token.
+
+    Redirects to /dashboard.
+
+!!! note "ACTION (Optional)" Paste Screenshot of Login/Loading Screen Here
+
+![Login Screen Placeholder]
+
+3. Figma Design Reference
+
+Figma File: Relitix AI - Contract Management Module
+
+Use this link to access all design screens and ensure accurate implementation of UI components.
